@@ -1,0 +1,6 @@
+{
+  "name": "TOMCOS - Façonnage Cosmétiques & Parfums",
+  "description": "Société spécialisée dans le travail à façon, conditionnement, étuyage et logistique de cosmétiques et parfums à Grasse.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
