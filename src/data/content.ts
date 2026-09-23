@@ -1,4 +1,9 @@
 import { Language } from '../types';
+import heroDroplet from '../assets/images/hero_serum_droplet_1790190108436.jpg';
+import bottlesLine from '../assets/images/packaging_bottles_line_1790188964352.jpg';
+import boxesCoffrets from '../assets/images/luxury_boxes_coffrets_1790188974421.jpg';
+import qualityLab from '../assets/images/lab_sample_vials_1790190332674.jpg';
+import grasseLandscape from '../assets/images/grasse_perfume_capital_1790190855045.jpg';
 
 export const COMPANY_INFO = {
   name: 'TOMCOS',
@@ -411,9 +416,9 @@ export const CONTENT = {
 };
 
 export const IMAGES = {
-  heroDroplet: '/src/assets/images/hero_serum_droplet_1790190108436.jpg',
-  bottlesLine: '/src/assets/images/packaging_bottles_line_1790188964352.jpg',
-  boxesCoffrets: '/src/assets/images/luxury_boxes_coffrets_1790188974421.jpg',
-  qualityLab: '/src/assets/images/lab_sample_vials_1790190332674.jpg',
-  grasseLandscape: '/src/assets/images/grasse_perfume_capital_1790190855045.jpg',
+  heroDroplet,
+  bottlesLine,
+  boxesCoffrets,
+  qualityLab,
+  grasseLandscape,
 };
