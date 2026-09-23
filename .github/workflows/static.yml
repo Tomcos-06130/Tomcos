@@ -38,14 +38,6 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
-      - name: Create CNAME file
-        run: echo "tomcos.fr" > ./dist/CNAME
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: './dist'
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
