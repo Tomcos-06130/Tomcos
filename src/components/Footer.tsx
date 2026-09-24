@@ -19,9 +19,11 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, lang }) => {
           {/* Col 1: Brand & Values */}
           <div className="space-y-4 max-w-md">
             <div className="flex items-center gap-3">
-              <div className="p-1 bg-white rounded-lg inline-flex items-center justify-center">
-                <TomcosLogo className="h-8 w-auto" idSuffix="footer" />
-              </div>
+              <img
+                src="/logo.png"
+                alt="Logo TOMCOS"
+                className="h-9 w-auto object-contain"
+              />
               <span className="text-xl font-bold tracking-tight text-white">
                 TOMCOS
               </span>
