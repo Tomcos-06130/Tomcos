@@ -28,7 +28,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ lang, defaultService =
   const serviceOptions = lang === 'fr'
     ? [
         'Conditionnement & Étuyage',
-        'Coffrets, Cartonnettes & Céllophanage',
+        'Coffrets, Cartonnettes & Cellophanage',
         'Aide au choix d’emballages & Sourcing',
         'Service Qualité & Traçabilité',
         'Stockage & Logistique',

@@ -52,13 +52,13 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onNavigate, lang }) 
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold leading-tight">
                 {lang === 'fr'
-                  ? 'Étuis, calages, coffrets prestige & céllophanage'
+                  ? 'Étuis, calages, coffrets prestige & cellophanage'
                   : 'Boxes, bespoke inserts, prestige sets & overwrapping'}
               </h2>
               <p className="text-sm sm:text-base text-neutral-200 leading-relaxed">
                 {lang === 'fr'
-                  ? 'Une chaîne de conditionnement flexible et rigoureuse au cœur de Grasse.'
-                  : 'A flexible, rigorous packaging chain at the heart of Grasse.'}
+                  ? 'Une chaîne de conditionnement flexible et rigoureuse au cœur de Grasse. Tout type de format et d’outillage disponible.'
+                  : 'A flexible, rigorous packaging chain at the heart of Grasse. All formats and tooling available.'}
               </p>
             </div>
           </div>

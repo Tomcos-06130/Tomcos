@@ -74,7 +74,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ lang, selectedService 
                   </div>
                   <div>
                     <span className="block text-xs text-neutral-500 font-medium">
-                      {lang === 'fr' ? 'Email atelier & commercial' : 'Email Address'}
+                      Email
                     </span>
                     <span className="font-bold text-neutral-950 group-hover:underline break-all">
                       {COMPANY_INFO.email}

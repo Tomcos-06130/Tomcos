@@ -52,20 +52,21 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, lang }) => {
                 </button>
               </div>
 
-              {/* Trust Indicators */}
+              {/* Certifications (BPF-ISO22716 ; Ecocert ; Cosmos) */}
               <div className="pt-4 flex flex-wrap items-center gap-y-2 gap-x-6 text-xs font-medium text-neutral-800">
-                <span className="flex items-center gap-1.5">
-                  <CheckCircle2 className="w-4 h-4 text-neutral-900" />
-                  Rigueur & Contrôle permanent
-                </span>
-                <span className="flex items-center gap-1.5">
-                  <Award className="w-4 h-4 text-neutral-900" />
-                  Échantillothèque aux normes
-                </span>
-                <span className="flex items-center gap-1.5">
-                  <Zap className="w-4 h-4 text-neutral-900" />
-                  Inventaire sans rupture
-                </span>
+                <a
+                  href="#certifications"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById('certifications')?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  className="inline-flex items-center gap-2 bg-emerald-50 hover:bg-emerald-100/90 text-emerald-900 font-semibold px-4 py-2 rounded-full border border-emerald-200/80 shadow-2xs hover:shadow-xs transition-all cursor-pointer group active:scale-95"
+                  title={lang === 'fr' ? 'Consulter le détail de nos certifications en bas de page' : 'View our certifications & standards'}
+                >
+                  <ShieldCheck className="w-4 h-4 text-emerald-700 shrink-0" />
+                  <span>BPF-ISO22716 ; Ecocert ; Cosmos</span>
+                  <span className="text-emerald-700 group-hover:text-emerald-950 transition-colors ml-0.5 font-bold">↓</span>
+                </a>
               </div>
             </div>
 
@@ -73,10 +74,16 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, lang }) => {
             <div className="lg:col-span-5 relative flex items-center justify-center">
               <div className="relative w-full max-w-md lg:max-w-none aspect-[4/3] sm:aspect-square lg:aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
                 <img
-                  src={IMAGES.heroDroplet}
-                  alt="Flacon cosmétique et gouttelette de sérum - TOMCOS Grasse"
+                  src="/flacons.jpg"
+                  alt="Flacons cosmétiques et conditionnement - TOMCOS Grasse"
                   className="w-full h-full object-cover object-center"
                   referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    // Si flacons.jpg n'est pas encore déposé dans public/, bascule sur l'image par défaut
+                    if ((e.currentTarget as HTMLImageElement).src !== IMAGES.heroDroplet) {
+                      (e.currentTarget as HTMLImageElement).src = IMAGES.heroDroplet;
+                    }
+                  }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
               </div>
@@ -190,7 +197,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, lang }) => {
       </section>
 
       {/* SECTION 4: NORMES & CERTIFICATIONS (ISO 22716, Ecocert, Cosmos) */}
-      <section className="py-16 sm:py-20 bg-white border-b border-neutral-200">
+      <section id="certifications" className="py-16 sm:py-20 bg-white border-b border-neutral-200 scroll-mt-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           <div className="text-center max-w-2xl mx-auto mb-12 space-y-3">
             <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-emerald-800 bg-emerald-50 border border-emerald-200/80 px-3 py-1 rounded-full">

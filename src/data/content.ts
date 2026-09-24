@@ -2,7 +2,7 @@ import { Language } from '../types';
 import heroDroplet from '../assets/images/hero_serum_droplet_1790190108436.jpg';
 import bottlesLine from '../assets/images/packaging_bottles_line_1790188964352.jpg';
 import boxesCoffrets from '../assets/images/luxury_boxes_coffrets_1790188974421.jpg';
-import qualityLab from '../assets/images/lab_sample_vials_1790190332674.jpg';
+import qualityLab from '../assets/images/dropper_bottles_lab_1790246610673.jpg';
 import grasseLandscape from '../assets/images/grasse_perfume_capital_1790190855045.jpg';
 
 export const COMPANY_INFO = {
@@ -36,7 +36,7 @@ export const CONTENT = {
       location: 'Grasse, Capitale mondiale du parfum',
     },
     hero: {
-      subtitle: 'Savoir-faire de Grasse • Fabrication Française',
+      subtitle: 'Savoir-faire de Grasse • Made in France 🇫🇷',
       title: 'Travail à façon de produits cosmétiques et parfums',
       description: 'Basée à Grasse, la société TOMCOS offre l’excellence en matière de rigueur, qualité et rapidité pour le conditionnement et la valorisation de vos créations.',
       ctaPrimary: 'Demander un devis',
@@ -54,8 +54,8 @@ export const CONTENT = {
         },
         {
           num: '02',
-          title: 'Coffrets, Cartonnettes & Céllophanage',
-          description: 'Montage de coffrets luxe, pose sur cartonnettes et regroupement sous film thermorétractable ou céllophanage pli en X pour une présentation impeccable.',
+          title: 'Coffrets, Cartonnettes & Cellophanage',
+          description: 'Montage de coffrets luxe, pose sur cartonnettes et regroupement sous film thermorétractable ou cellophanage pli en X pour une présentation impeccable.',
         },
         {
           num: '03',
@@ -114,7 +114,7 @@ export const CONTENT = {
         points: [
           'Montage et garnissage de coffrets prestige',
           'Disposition sur cartonnettes de présentation',
-          'Fardelage, mise sous film thermorétractable ou céllophanage pli en X',
+          'Fardelage, mise sous film thermorétractable ou cellophanage pli en X',
           'Étiquetage code-barres et scellés de sécurité',
         ],
       },
@@ -231,7 +231,7 @@ export const CONTENT = {
       location: 'Grasse, World Perfume Capital',
     },
     hero: {
-      subtitle: 'Grasse Heritage • Made in France',
+      subtitle: 'Grasse Heritage • Made in France 🇫🇷',
       title: 'Contract Manufacturing & Packaging for Cosmetics & Perfumes',
       description: 'Located in Grasse, TOMCOS delivers excellence in precision, quality, and speed for packaging and elevating your beauty and perfume lines.',
       ctaPrimary: 'Request a Quote',

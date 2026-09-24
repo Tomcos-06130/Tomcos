@@ -35,7 +35,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, lang }) => {
             <div className="lg:col-span-5 relative aspect-[16/10] lg:aspect-auto overflow-hidden">
               <img
                 src={IMAGES.qualityLab}
-                alt="Laboratoire de contrôle qualité cosmétique à Grasse"
+                alt="Flacons cosmétiques avec pipettes de précision sans marquage - TOMCOS Grasse"
                 className="w-full h-full object-cover lg:absolute lg:inset-0 hover:scale-105 transition-transform duration-700"
                 referrerPolicy="no-referrer"
               />
