@@ -108,8 +108,17 @@ export const Header: React.FC<HeaderProps> = ({
         {/* Brand Logo Lockup */}
         <button
           onClick={() => handleNav('accueil')}
-          className="flex items-center text-left group focus:outline-none"
+          className="flex items-center gap-3 text-left group focus:outline-none"
         >
+          <img
+            src="logo.png"
+            alt="Logo TOMCOS"
+            className="h-9 sm:h-11 w-auto max-w-[120px] object-contain flex-shrink-0"
+            onError={(e) => {
+              // Hide cleanly until logo.png is added by the user
+              (e.currentTarget as HTMLElement).style.display = 'none';
+            }}
+          />
           <div className="flex flex-col">
             <span className="text-xl sm:text-2xl font-bold tracking-tight text-neutral-950">
               TOMCOS

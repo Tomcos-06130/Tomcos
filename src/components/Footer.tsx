@@ -1,6 +1,7 @@
 import React from 'react';
 import { PageId, Language } from '../types';
 import { COMPANY_INFO, CONTENT } from '../data/content';
+import { TomcosLogo } from './TomcosLogo';
 import { Phone, Mail, MapPin, Clock, ArrowUpRight } from 'lucide-react';
 
 interface FooterProps {
@@ -17,7 +18,10 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, lang }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 pb-12 border-b border-neutral-800">
           {/* Col 1: Brand & Values */}
           <div className="space-y-4 max-w-md">
-            <div>
+            <div className="flex items-center gap-3">
+              <div className="p-1 bg-white rounded-lg inline-flex items-center justify-center">
+                <TomcosLogo className="h-8 w-auto" idSuffix="footer" />
+              </div>
               <span className="text-xl font-bold tracking-tight text-white">
                 TOMCOS
               </span>

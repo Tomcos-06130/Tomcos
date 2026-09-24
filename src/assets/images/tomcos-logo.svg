@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 460" width="100%" height="100%" aria-label="Logo TOMCOS">
+  <defs>
+    <!-- Pattern weave for Blue bar -->
+    <pattern id="tomcos-weave-blue" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="#3AAEDB" />
+      <line x1="0" y1="2" x2="8" y2="2" stroke="#48BEEB" stroke-width="1.2" opacity="0.8" />
+      <line x1="0" y1="6" x2="8" y2="6" stroke="#258CB2" stroke-width="1.2" opacity="0.7" />
+      <line x1="2" y1="0" x2="2" y2="8" stroke="#48BEEB" stroke-width="1.2" opacity="0.8" />
+      <line x1="6" y1="0" x2="6" y2="8" stroke="#1F7D9F" stroke-width="1.2" opacity="0.7" />
+      <circle cx="2" cy="6" r="0.9" fill="#1A6B88" opacity="0.6" />
+      <circle cx="6" cy="2" r="0.9" fill="#1A6B88" opacity="0.6" />
+    </pattern>
+
+    <!-- Pattern weave for Golden Sand bar -->
+    <pattern id="tomcos-weave-gold" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="#DABF8E" />
+      <line x1="0" y1="2" x2="8" y2="2" stroke="#ECDAAA" stroke-width="1.2" opacity="0.8" />
+      <line x1="0" y1="6" x2="8" y2="6" stroke="#B89B65" stroke-width="1.2" opacity="0.7" />
+      <line x1="2" y1="0" x2="2" y2="8" stroke="#ECDAAA" stroke-width="1.2" opacity="0.8" />
+      <line x1="6" y1="0" x2="6" y2="8" stroke="#9E824F" stroke-width="1.2" opacity="0.7" />
+      <circle cx="2" cy="6" r="0.9" fill="#886E3C" opacity="0.6" />
+      <circle cx="6" cy="2" r="0.9" fill="#886E3C" opacity="0.6" />
+    </pattern>
+
+    <filter id="soft-shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="3" dy="4" stdDeviation="1.5" flood-color="#808590" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Architectural L-Frame -->
+  <g id="rulers">
+    <!-- Golden Sand L-Bar (Vertical: higher than blue; Horizontal: above bottom) -->
+    <rect x="76" y="30" width="36" height="395" fill="url(#tomcos-weave-gold)" stroke="#B89B65" stroke-width="1" />
+    <rect x="38" y="390" width="315" height="36" fill="url(#tomcos-weave-gold)" stroke="#B89B65" stroke-width="1" />
+
+    <!-- Turquoise Blue L-Bar (Vertical: outer left; Horizontal: lower bottom) -->
+    <rect x="54" y="42" width="37" height="400" fill="url(#tomcos-weave-blue)" stroke="#2289AE" stroke-width="1" />
+    <rect x="18" y="405" width="315" height="37" fill="url(#tomcos-weave-blue)" stroke="#2289AE" stroke-width="1" />
+  </g>
+
+  <!-- Typography Stack: TOM (vertical) + cos (horizontal) + (R) -->
+  <!-- 1. Background Ghost Shadows -->
+  <g font-family="'Didot', 'Bodoni MT', 'Times New Roman', 'Playfair Display', Georgia, serif" fill="#BDC0C8" opacity="0.85">
+    <text x="140" y="156" font-size="140" font-weight="400" text-anchor="middle">T</text>
+    <text x="144" y="270" font-size="140" font-weight="400" text-anchor="middle">O</text>
+    <text x="144" y="386" font-size="132" font-weight="400" text-anchor="middle">M</text>
+    <text x="204" y="400" font-size="134" font-weight="400" font-style="italic">cos</text>
+    <text x="430" y="332" font-size="28" font-weight="400">®</text>
+  </g>
+
+  <!-- 2. Foreground Crisp Letters -->
+  <g font-family="'Didot', 'Bodoni MT', 'Times New Roman', 'Playfair Display', Georgia, serif" fill="#696D76" font-weight="400">
+    <text x="130" y="146" font-size="140" text-anchor="middle">T</text>
+    <text x="134" y="260" font-size="140" text-anchor="middle">O</text>
+    <text x="134" y="376" font-size="132" text-anchor="middle">M</text>
+    <text x="194" y="390" font-size="134" font-style="italic">cos</text>
+    <text x="420" y="322" font-size="28">®</text>
+  </g>
+</svg>
