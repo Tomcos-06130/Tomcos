@@ -1,6 +1,7 @@
 import React from 'react';
 import { PageId, Language } from '../types';
 import { CONTENT, IMAGES, COMPANY_INFO } from '../data/content';
+import { FlagFR } from '../components/Flags';
 import { ArrowRight, CheckCircle2, ShieldCheck, Zap, Award, Phone, Mail, MapPin } from 'lucide-react';
 
 interface HomePageProps {
@@ -23,7 +24,8 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, lang }) => {
             {/* Left Content */}
             <div className="lg:col-span-7 space-y-6">
               <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-neutral-800/80 bg-white/40 backdrop-blur-sm px-3.5 py-1 rounded-full">
-                <span>{t.hero.subtitle}</span>
+                <span>{lang === 'fr' ? 'Savoir-faire de Grasse • Made in France' : 'Grasse Heritage • Made in France'}</span>
+                <FlagFR className="w-4 h-2.5 -mt-0.5" />
               </div>
 
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-neutral-950 leading-[1.15] text-balance">

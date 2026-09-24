@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { PageId, Language } from '../types';
 import { COMPANY_INFO, CONTENT } from '../data/content';
+import { FlagFR, FlagGB } from './Flags';
 import { Phone, Mail, MapPin, Menu, X, ArrowRight } from 'lucide-react';
 
 interface HeaderProps {
@@ -77,26 +78,28 @@ export const Header: React.FC<HeaderProps> = ({
               <button
                 type="button"
                 onClick={() => onToggleLang('fr')}
-                className={`text-xs px-1.5 py-0.5 rounded transition-colors ${
+                className={`inline-flex items-center gap-1.5 text-xs px-2 py-0.5 rounded transition-colors ${
                   lang === 'fr'
-                    ? 'font-bold text-white bg-neutral-800'
+                    ? 'font-bold text-white bg-neutral-800 ring-1 ring-neutral-600'
                     : 'text-neutral-400 hover:text-white'
                 }`}
                 title="Français"
               >
-                FR 🇫🇷
+                <span>FR</span>
+                <FlagFR className="w-4 h-2.5" />
               </button>
               <button
                 type="button"
                 onClick={() => onToggleLang('en')}
-                className={`text-xs px-1.5 py-0.5 rounded transition-colors ${
+                className={`inline-flex items-center gap-1.5 text-xs px-2 py-0.5 rounded transition-colors ${
                   lang === 'en'
-                    ? 'font-bold text-white bg-neutral-800'
+                    ? 'font-bold text-white bg-neutral-800 ring-1 ring-neutral-600'
                     : 'text-neutral-400 hover:text-white'
                 }`}
                 title="English"
               >
-                EN 🇬🇧
+                <span>EN</span>
+                <FlagGB className="w-4 h-2.5" />
               </button>
             </div>
           </div>
@@ -231,6 +234,36 @@ export const Header: React.FC<HeaderProps> = ({
             >
               {t.nav.contact}
             </button>
+          </div>
+
+          <div className="pt-2 flex items-center justify-between border-t border-neutral-100">
+            <span className="text-xs text-neutral-500 font-medium">Langue / Language :</span>
+            <div className="flex items-center gap-2">
+              <button
+                type="button"
+                onClick={() => onToggleLang('fr')}
+                className={`inline-flex items-center gap-1.5 text-xs px-2.5 py-1 rounded transition-colors ${
+                  lang === 'fr'
+                    ? 'font-bold text-neutral-950 bg-neutral-100 ring-1 ring-neutral-300'
+                    : 'text-neutral-500 hover:text-neutral-900'
+                }`}
+              >
+                <span>FR</span>
+                <FlagFR className="w-4 h-2.5" />
+              </button>
+              <button
+                type="button"
+                onClick={() => onToggleLang('en')}
+                className={`inline-flex items-center gap-1.5 text-xs px-2.5 py-1 rounded transition-colors ${
+                  lang === 'en'
+                    ? 'font-bold text-neutral-950 bg-neutral-100 ring-1 ring-neutral-300'
+                    : 'text-neutral-500 hover:text-neutral-900'
+                }`}
+              >
+                <span>EN</span>
+                <FlagGB className="w-4 h-2.5" />
+              </button>
+            </div>
           </div>
 
           <div className="pt-2">

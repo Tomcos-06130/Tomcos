@@ -36,7 +36,7 @@ export const CONTENT = {
       location: 'Grasse, Capitale mondiale du parfum',
     },
     hero: {
-      subtitle: 'Savoir-faire de Grasse • Made in France 🇫🇷',
+      subtitle: 'Savoir-faire de Grasse • Made in France',
       title: 'Travail à façon de produits cosmétiques et parfums',
       description: 'Basée à Grasse, la société TOMCOS offre l’excellence en matière de rigueur, qualité et rapidité pour le conditionnement et la valorisation de vos créations.',
       ctaPrimary: 'Demander un devis',
@@ -231,7 +231,7 @@ export const CONTENT = {
       location: 'Grasse, World Perfume Capital',
     },
     hero: {
-      subtitle: 'Grasse Heritage • Made in France 🇫🇷',
+      subtitle: 'Grasse Heritage • Made in France',
       title: 'Contract Manufacturing & Packaging for Cosmetics & Perfumes',
       description: 'Located in Grasse, TOMCOS delivers excellence in precision, quality, and speed for packaging and elevating your beauty and perfume lines.',
       ctaPrimary: 'Request a Quote',
